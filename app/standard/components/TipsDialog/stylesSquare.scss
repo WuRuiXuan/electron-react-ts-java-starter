@@ -1,0 +1,52 @@
+@import '../../../scss/flexibleSquare';
+@import '../../../scss/mixinsSquare';
+
+.tips {
+  width: W($px: 874);
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+
+  .title {
+    width: 100%;
+    height: H($px: 80);
+    line-height: H($px: 80);
+    text-align: center;
+    background-color: #454955;
+    color: white;
+    font-size: H($px: 36);
+    font-weight: bolder;
+    position: relative;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: H($px: 20);
+
+    span {
+      font-size: H($px: 30);
+      margin-top: H($px: 20);
+      font-weight: bolder;
+      white-space: pre-line;
+    }
+  }
+}
+
+.tipsMask {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

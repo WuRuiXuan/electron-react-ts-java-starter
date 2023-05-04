@@ -1,0 +1,108 @@
+@import '../../../scss/flexible';
+@import '../../../scss/mixins';
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: H($px: 40);
+  background-image: linear-gradient(#1a86f5, #ffffff);
+
+  .loadingText {
+    margin-top: 16px;
+  }
+
+  .title {
+    width: 100%;
+    margin: H($px: 100) 0;
+    font-size: H($px: 40);
+    text-align: center;
+  }
+
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .table {
+      display: flex;
+      flex-direction: column;
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: H($px: 16) 0;
+
+        > span {
+          width: W($px: 300);
+        }
+
+        > input {
+          width: W($px: 600);
+          height: H($px: 80);
+          font-size: H($px: 40);
+          box-sizing: border-box;
+          padding-left: W($px: 40);
+          border-radius: 6px;
+
+          &.disabled {
+            font-size: H($px: 40);
+            border-color: black;
+          }
+        }
+
+        :global {
+          .ant-select {
+            height: H($px: 80);
+          }
+
+          .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+            width: W($px: 600);
+            height: 100%;
+            padding: 0 W($px: 40);
+            border-radius: 6px;
+
+            > span {
+              font-size: H($px: 40);
+              font-weight: bolder;
+              line-height: H($px: 80);
+
+              > input {
+                height: 100%;
+                font-size: H($px: 40);
+              }
+            }
+          }
+
+          .ant-select-arrow {
+            width: W($px: 30);
+            height: H($px: 80);
+            top: 0;
+            margin-top: 0;
+            font-size: H($px: 30);
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin: H($px: 100) 0;
+
+    :global {
+      .ant-btn {
+        width: W($px: 300);
+        height: H($px: 80);
+        font-size: H($px: 40);
+      }
+    }
+  }
+}

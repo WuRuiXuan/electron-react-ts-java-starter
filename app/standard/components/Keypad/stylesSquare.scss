@@ -1,0 +1,68 @@
+@import '../../../scss/flexibleSquare';
+@import '../../../scss/mixinsSquare';
+
+.keypad {
+  width: W($px: 500);
+  height: H($px: 500);
+  position: fixed;
+  z-index: 1002;
+  background-color: white;
+  display: flex;
+  font-size: H($px: 32);
+  font-weight: bolder;
+  user-select: none;
+  border-radius: H($px: 12);
+  box-sizing: border-box;
+  box-shadow: 0 0 12px rgba(53, 137, 249, 0.4);
+
+  :global {
+    .ant-btn {
+      width: W($px: 108);
+      height: H($px: 108);
+      margin: H($px: 8) W($px: 8);
+      font-size: H($px: 32);
+      font-weight: bolder;
+      border-radius: H($px: 8);
+      padding: 0;
+    }
+  }
+
+  .left {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    :global {
+
+      .ant-btn:nth-last-child(3) {
+        color: #1a86f5;
+      }
+    }
+  }
+
+  .right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    :global {
+
+      .ant-btn:nth-child(1) {
+        background-color: #f50263;
+        color: white;
+      }
+
+      .ant-btn:nth-child(2) {
+        background-color: #01d9bf;
+        color: white;
+      }
+
+      .ant-btn:nth-child(3) {
+        flex: 1;
+        background-color: #1a86f5;
+        color: white;
+      }
+    }
+  }
+}

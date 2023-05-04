@@ -1,0 +1,16 @@
+{
+  "name": "electron-ts",
+  "productName": "electron-react-ts-java-starter",
+  "version": "1.0.0",
+  "description": "win客户端32位",
+  "author": "wuruixuan",
+  "license": "",
+  "main": "./main.prod.js",
+  "scripts": {
+    "electron-rebuild": "node -r @babel/register ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "dependencies": {
+    "java": "^0.11.0"
+  }
+}

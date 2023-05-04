@@ -1,0 +1,281 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import '~swiper/dist/css/swiper.min.css';
+@import "~antd/dist/antd.css";
+
+.ant-spin-dot {
+  width: 80px;
+  height: 80px;
+}
+
+.ant-spin-lg .ant-spin-dot i {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+}
+
+.ant-spin-text {
+  color: white;
+  font-size: 36px;
+  margin-top: 12px;
+}
+
+.ant-modal {
+  max-width: 10000px;
+}
+
+.ant-modal-wrap {
+  overflow: hidden;
+}
+
+.ant-modal-centered .ant-modal {
+  padding: 0;
+  text-align: center;
+}
+
+.ant-modal-content {
+  display: inline-block;
+  background-color: transparent;
+}
+
+.ant-modal-body {
+  display: inline-block;
+  padding: 0;
+}
+
+.ant-message-notice-content {
+  max-width: 35%;
+  max-height: 80%;
+}
+
+.ant-message-custom-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 30px;
+  text-align: left;
+  line-height: 40px;
+  word-break: break-all;
+}
+
+.ant-message .anticon {
+  font-size: 40px;
+  margin-right: 16px;
+}
+
+.ant-picker-dropdown {
+  font-size: 20px;
+}
+
+.ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+  font-size: 40px;
+}
+
+.ant-select-item-option-content {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.ant-select-item {
+  font-size: 30px;
+}
+
+.ant-tooltip {
+  font-size: 40px;
+}
+
+.ant-progress-circle .ant-progress-text {
+  color: white;
+  font-size: 40px;
+}
+
+@font-face {
+  font-family: PingFang SC;
+  src: url('PingFangSCRegular.ttf');
+}
+
+/* html {
+  height:768px;
+  width:1024px;
+} */
+
+body {
+  position: relative;
+  height: 100vh;
+  font-family: PingFang SC;
+  overflow-y: hidden;
+  margin: 0;
+  user-select: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#mask, #progressMask {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.33);
+  z-index: 1007;
+  visibility: hidden;
+  user-select: none;
+}
+
+span,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+input,
+select,
+option {
+  font-family: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+ol,
+ul,
+dl,
+dd,
+p,
+textarea,
+input,
+select,
+option,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul,
+textarea,
+input,
+option,
+th,
+td {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.clearFix::after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearFix {
+  *zoom: 1;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+input[type='text'],
+textarea {
+  appearance: none;
+}
+
+input:focus {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+img {
+  display: block;
+}
+
+a,
+textarea,
+input {
+  outline: none;
+  border: 0;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+

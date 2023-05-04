@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@import 'variables';
+@import 'flexible';
+
+@mixin flex_box_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin login_input {
+  width: H($px: 498);
+  height: H($px: 74);
+  border-radius: 6px;
+  box-shadow: 0 2px 10px 0 rgba(67, 85, 125, 0.1);
+  font-size: H($px: 30);
+  &:focus {
+    border: 1px solid rgb(100, 144, 114);
+  }
+}
+
+@mixin font_color_black {
+  color: rgba(65, 71, 80, 1);
+}
+
+@mixin font_color_gray {
+  color: rgba(27, 133, 97, 1);
+}
+
+@mixin font_color_red {
+  color: rgba(232, 84, 30, 1);
+}
+
+@mixin font_color_dark_red {
+  color: rgba(235, 78, 97, 1);
+}
+
+@mixin home_top_button {
+  font-size: H($px: 20);
+  margin: 0 W($px: 20);
+  background-color: transparent;
+  @include font_color_gray;
+}
+
+@mixin home_divide_line {
+  width: 2px;
+  height: H($px: 12);
+  @include divide_line_background_color;
+}
+
+@mixin divide_line_background_color {
+  background-color: rgba(216, 216, 216, 1);
+}
+
+@mixin dialog_button {
+  width: W($px: 140);
+  height: H($px: 52);
+  box-shadow: 0 4px 7px 0 rgba(255, 255, 255, 0.17);
+  border-radius: H($px: 26);
+  font-size: H($px: 18);
+  font-weight: bolder;
+}
+
+@mixin confirm_button {
+  @include dialog_button;
+  background: rgba(27, 133, 97, 1);
+  color: white;
+  margin-right: W($px: 44);
+}
+
+@mixin cancel_button {
+  @include dialog_button;
+  background: rgba(242, 242, 242, 1);
+  @include font_color_gray;
+}
+
+@mixin goods_item_flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin text_no_wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

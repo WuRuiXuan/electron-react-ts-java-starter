@@ -1,0 +1,72 @@
+@import '../../../scss/flexibleSquare';
+@import '../../../scss/mixinsSquare';
+
+.confirm {
+  width: W($px: 874);
+  height: H($px: 420);
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  .title {
+    display: flex;
+    font-size: H($px: 48);
+    font-weight: bolder;
+    color: #4F4F4F;
+    height: H($px: 278);
+    text-align: center;
+    align-items: center;
+    padding: 0 W($px: 10);
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .buttonsWrap {
+    flex: 1;
+    width: 100%;
+
+    .okButton {
+      width: 50%;
+      height: 100%;
+      font-size: H($px: 48);
+      font-weight: bolder;
+      color: white;
+      background: linear-gradient(315deg, #7fc1fe 1%, #8f6bff);
+    }
+
+    .refuseButton {
+      width: 50%;
+      height: 100%;
+      font-size: H($px: 48);
+      font-weight: bolder;
+      color: #353535;
+      background-color: #F0F0F5;
+    }
+  }
+
+  .yellowBox {
+    :global {
+      .ant-checkbox-wrapper {
+        font-size: H($px: 40) !important;
+      }
+
+      .ant-checkbox {
+        width: W($px: 40);
+        height: H($px: 40);
+      }
+
+      .ant-checkbox-inner {
+        width: W($px: 40);
+        height: H($px: 40);
+      }
+
+      .ant-checkbox-checked .ant-checkbox-inner::after {
+        transform: rotate(45deg) scale(2) translate(0%, -50%);
+      }
+    }
+
+  }
+}

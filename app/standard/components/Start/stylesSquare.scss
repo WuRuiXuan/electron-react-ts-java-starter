@@ -1,0 +1,20 @@
+@import '../../../scss/flexibleSquare';
+@import '../../../scss/mixinsSquare';
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .loadingText {
+    font-size: 40px;
+    margin-top: 16px;
+  }
+
+  .exitButton {
+    height: H($px: 64);
+    position: absolute;
+    top: H($px: 40);
+    right: W($px: 40);
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-no-unknown": [0],
+    "color-hex-case": [0],
+    "color-hex-length": [0],
+    "function-name-case": [0],
+    "no-descending-specificity" : [0],
+    "rule-empty-line-before": [0],
+    "selector-pseudo-class-no-unknown": [0],
+    "at-rule-empty-line-before": [0],
+    "declaration-empty-line-before": "never",
+    "selector-list-comma-newline-after": [0],
+    "no-eol-whitespace": [0]
+  }
+}

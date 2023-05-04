@@ -1,0 +1,137 @@
+@import '../../../scss/flexibleSquare';
+@import '../../../scss/mixinsSquare';
+
+.dialog {
+  width: W($px: 874);
+  background-color: #f0f0f5;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  .title {
+    width: 100%;
+    height: H($px: 120);
+    line-height: H($px: 120);
+    text-align: center;
+    background-color: #454955;
+    color: white;
+    font-size: H($px: 44);
+    font-weight: bolder;
+    position: relative;
+
+    > img {
+      position: absolute;
+      height: H($px: 48);
+      top: H($px: 36);
+      right: W($px: 46);
+    }
+  }
+
+  .inputTips {
+    width: 100%;
+    min-height: H($px: 100);
+    color: #4F4F4F;
+    font-size: H($px: 38);
+    font-weight: bolder;
+    box-sizing: border-box;
+    padding: H($px: 32) W($px: 46) 0 W($px: 46);
+    text-align: left;
+  }
+
+  .inputWrap {
+    color: #2A2A2A;
+    font-size: H($px: 80);
+    font-weight: bolder;
+    position: relative;
+    text-align: center;
+    line-height: H($px: 120);
+    margin-top: H($px: 6);
+
+    > input {
+      width: W($px: 810);
+      height: H($px: 120);
+      background-color: white;
+      border: 1px solid #21268a;
+      border-radius: 4px;
+      color: #2A2A2A;
+      font-size: H($px: 80);
+      font-weight: bolder;
+      padding: 0 W($px: 16) 0 W($px: 16);
+      box-sizing: border-box;
+
+      &:focus {
+        border: 1px solid rgb(100, 144, 114);
+      }
+    }
+
+    > span {
+      position: absolute;
+      top: H($px: 4);
+      left: W($px: 32);
+    }
+  }
+
+  .change {
+    width: 100%;
+    height: H($px: 110);
+    background-color: #02a260;
+    border: 1px solid #d0d0d0;
+    color: white;
+    font-size: H($px: 36);
+    font-weight: bolder;
+    display: flex;
+    margin-top: H($px: 40);
+
+    > span {
+      height: 100%;
+      line-height: H($px: 110);
+      padding: 0 W($px: 56);
+
+      &:nth-child(2) {
+        flex: 1;
+        text-align: right;
+      }
+    }
+  }
+
+  .buttonsWrap {
+    width: 100%;
+    display: flex;
+    height: H($px: 142);
+    margin-top: H($px: 80);
+
+    > input {
+      width: 50%;
+      height: 100%;
+      font-size: H($px: 48);
+      font-weight: bolder;
+
+      //&:nth-child(1) {
+      //  background-color: white;
+      //  color: #7F7F7F;
+      //}
+      //
+      //&:nth-child(2) {
+      //  background-color: #B0B0B0;
+      //  color: white;
+      //}
+    }
+
+    .cancelButton {
+      background-color: white;
+      color: #7F7F7F;
+    }
+
+    .confirmButton {
+      background-color: #b0b0b0;
+      color: white;
+    }
+
+    .active {
+      background-color: #21268a;
+      color: white;
+    }
+  }
+}
