@@ -5,11 +5,11 @@ A starter based on [electron-react-boilerplate](https://github.com/electron-reac
 ### Features
 
 - Support program Java interact with nodejs
-
 - Support persistence of the Redux Store
 - Support hot updates by download source code and replace it while program running
 - Implementated Redux with Typescript and React Hook
 - Good decoupling and expandability, write business with Classes, Inheritance and Polymorphism
+- Wrapped numbers/alphabets keypad component
 - Only support win32, x86 nodejs and java, electron version 2.0.6, electron-builder version 20.29.0, adaptation to new versions and other desktop platforms is in planning
 
 ### Preparation
